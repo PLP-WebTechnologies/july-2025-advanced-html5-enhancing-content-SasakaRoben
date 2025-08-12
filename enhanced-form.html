@@ -69,6 +69,64 @@
             </figure>
         </section>
 
+        <section>
+            <h2>Sign Up for Cybersecurity Workshop</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" pattern="^\+?[0-9\s\-]{7,15}$" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Workshop Details</legend>
+                    <label for="topic">Preferred Topic:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Select a Topic --</option>
+                        <option value="phishing">Preventing Phishing</option>
+                        <option value="ransomware">Ransomware Response</option>
+                        <option value="networksecurity">Network Security Basics</option>
+                    </select>
+                    <br><br>
+
+                    <label>Experience Level:</label>
+                    <input type="radio" id="beginner" name="experience" value="beginner" required>
+                    <label for="beginner">Beginner</label>
+                    <input type="radio" id="intermediate" name="experience" value="intermediate">
+                    <label for="intermediate">Intermediate</label>
+                    <input type="radio" id="advanced" name="experience" value="advanced">
+                    <label for="advanced">Advanced</label>
+                    <br><br>
+
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Tell us more..."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Setup</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <small>Password must be at least 8 characters with uppercase, lowercase, and a number.</small>
+                </fieldset>
+
+                <br>
+                <button type="submit">Register</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+
     </main>
 </body>
 </html>
